@@ -1,1 +1,18 @@
-%h1 This is the Placeholder!
+#banner
+  .banner_content
+    %h1 File Cabinet
+    %p Your Life's Work. Organised, Always
+    %button= link_to "Enter", new_user_registration_path
+
+#callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Organize
+        %p Next, check the MODEL for any additional configuration options you might want to add, such as confirmable or lockable. If you add an option, be sure to inspect the migration file(created by the generator if your ORM supports them) and uncomment the appropriate section. For example, if you add the confirmable option in the model, you'll need to uncomment thes Confirmable section in the migration.
+
+#bottom_cta
+  .wrapper
+    %h2 Go Ahead!
+    %br
+    %button= link_to "Join Now" , new_user_registration_path
